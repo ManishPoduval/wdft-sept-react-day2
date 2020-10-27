@@ -1,16 +1,18 @@
 import React from "react";
+
 class Button extends React.Component {
     //initializing a state
     state = {
         count: this.props.start,
         // name: ['Jorge', 'Manish', 'Marta']
     }
+    
     handleClick = () => {
         //console.log(this)
         console.log('Clicked')
         this.setState({
-            count: this.state.count + 1,
-        })    
+                count: this.state.count + 1,
+            })    
     }
     render =() => {
         return <div>
